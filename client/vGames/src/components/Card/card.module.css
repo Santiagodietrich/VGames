@@ -1,0 +1,51 @@
+.card {
+  display: grid;
+    width: 90px;
+    height: 314px;
+    border-radius: 20px;
+    background-image: url("./fondoVioleta.jpg");
+    background-size:320px;
+    position: relative;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+    position: relative; /* Agregamos relative para el posicionamiento absoluto interno */
+    text-align: center; /* Centra el contenido horizontalmente */
+  }
+  
+   .cardDetail {
+    color: rgb(255, 255, 255);
+    position: absolute; 
+    top: 55%; 
+    left: 40%; 
+    transform: translate(-50%, -50%);
+   }
+
+   
+  
+
+
+  .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .img {
+    width: 50%;
+    height: 30%;
+    position: absolute; /* Superpone la bandera */
+    top: 200px; /* Alinea la parte superior de la bandera con la parte superior de la tarjeta */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta horizontalmente en el centro */
+    z-index: 1; /* Asegura que la bandera esté sobre la tarjeta */
+  }
+  
+.gen{
+  margin-top:-20px;
+ margin-left: -50px;
+ font-size: 19px;
+}

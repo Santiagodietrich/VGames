@@ -1,0 +1,57 @@
+
+.detailContainer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: rgb(86, 129, 209);
+  /* background:linear-gradient(rgb(216, 46, 46),rgb(160, 145, 224)); */
+}
+
+/* Estilos para la imagen */
+.detailImageContainer {
+  width: 100%;
+  max-width: 200px; /* Ajusta según sea necesario */
+
+  margin-bottom: 10px; /* Espaciado opcional entre la imagen y la descripción */
+}
+
+.detailImage {
+  width: 300%;
+  height: auto;
+}
+
+/* Estilos para la descripción */
+.detailDescription {
+  margin-top: 10px;
+  font-size: small;
+}
+
+.loader{
+  font-size: 48px;
+  color: #000000;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+.loader:after{
+  content: 'Loading';
+  position: relative;
+  z-index: 5;
+}
+.loader:before{
+  content: '';
+  height: 6px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: linear-gradient(#FF3D00 100%, transparent 0) no-repeat;
+  background-size: 0% auto;
+  animation: 10s lineGrow linear infinite;
+}
+
+@keyframes lineGrow {to {  background-size: 100% auto}}

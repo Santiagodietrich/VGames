@@ -1,0 +1,95 @@
+.principal {
+    position: absolute; /* Posición fija para mantenerla en la parte superior */
+    top: 0; /* Posición en la parte superior */
+    left: 0;
+    width: 100%; /* Que ocupe todo el ancho */
+    background-color: #053444;
+	z-index: 1;
+}
+
+.menu {
+	background: linear-gradient(to bottom,  #3c49fd,  #fac28e);
+	color: #FFF;
+	height: 96px;
+	padding-left: 18px;
+	 background-image: url("./tiny toon.png");
+	background-size: 220px; 
+	background-repeat: repeat; 
+	transition: background-color 0.3s ease;
+	
+}
+
+
+.botonHome {
+	width: 65px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	background-color: rgb(5, 5, 5);
+	border-radius: 30px;
+	color: rgb(19, 19, 19);
+	font-weight: 600;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	transition-duration: .2s;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+	padding-left: 8px;
+    margin-top: 28px;
+  }
+  
+ 
+  
+  .botonHome:hover {
+	background-color:  rgb(49, 48, 48);
+	transition-duration: .5s;
+  }
+  
+  .botonHome:active {
+	transform: scale(0.97);
+	transition-duration: .2s;
+  }
+  
+ 
+
+
+
+.botonForm {
+	width: 162px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	background-color:  rgb(3, 3, 3);
+	border-radius: 30px;
+	color: rgb(19, 19, 19);
+	font-weight: 600;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	transition-duration: .2s;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+	padding-left: 8px;
+	transition-duration: .5s;
+	right: -150px;
+	top: -50px;
+  }
+  
+ 
+  
+
+  
+  .botonForm:hover {
+	background-color:  rgb(46, 46, 46);
+	transition-duration: .5s;
+  }
+  
+  .botonForm:active {
+	transform: scale(0.97);
+	transition-duration: .2s;
+  }
+  
+ 

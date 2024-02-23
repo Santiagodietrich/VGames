@@ -1,0 +1,71 @@
+
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(86, 129, 209);
+  height: auto;
+  margin-top: 70px;
+  box-sizing: border-box;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formInput,
+.formSelect {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.formSelect {
+  height: 34px;
+}
+
+.formError {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.formButton {
+  background-color: #08305a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.formButton:hover {
+  background-color: #0056b3;
+}
+
+.mario {
+  width: 390px;
+  height: 390px;
+  position: relative;
+  z-index: 1;
+  top: -490px;
+  left: 670px;
+}
+
+.wario {
+  width: 390px;
+  height: 390px;
+  position: relative;
+  z-index: 1;
+  top: -431px;
+  left: -690px;
+}

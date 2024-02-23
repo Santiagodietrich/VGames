@@ -1,0 +1,70 @@
+/* .filtro{
+    position:absolute;
+    z-index:1;
+    top:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    right:200px;     
+}
+
+.subtitulo{
+    color: black;
+    position: absolute;
+    right: 90px;
+}
+.sub{
+    position: absolute;
+    color:black;
+    left:-325px;
+}
+.subt{
+    color: black;
+    position: absolute;
+    right: -65px;
+}
+.subti{
+    position: absolute;
+    color: black;
+    left:-75px;
+} */
+
+
+.filtro {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: auto; /* Ajusta el ancho automáticamente al contenido */
+    right: 200px;
+    /* background-color: blue; */
+}
+
+.subtitulo {
+    color: black;
+    position: absolute;
+    right: 40px;
+}
+
+.sub {
+    position: absolute;
+    color: black;
+    left: -320px;
+}
+
+.subt {
+    color: black;
+    position: absolute;
+    right: -110px;
+}
+
+.subti {
+    position: absolute;
+    color: black;
+    left: -50px;
+}
+
+
