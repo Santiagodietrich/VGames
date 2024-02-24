@@ -7,7 +7,7 @@ import NavBar from "../src/components/NavBar/navBar";
 import Cards from "../src/components/Cards/cards";
 import axios from 'axios';
 
-axios.defaults.baseURL = "https://localhost:3001"
+axios.defaults.baseURL = "https://vgames-production.up.railway.app/"
 
 
 function App() {
