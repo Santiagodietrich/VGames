@@ -7,7 +7,8 @@ import NavBar from "../src/components/NavBar/navBar";
 import Cards from "../src/components/Cards/cards";
 import axios from 'axios';
 
-axios.defaults.baseURL = "https://vgames-production.up.railway.app/"
+// axios.defaults.baseURL = "http://vgames-production.up.railway.app"
+axios.defaults.baseURL="https://v-games-yg4p.vercel.app/"
 
 
 function App() {
