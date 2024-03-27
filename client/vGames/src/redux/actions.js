@@ -47,7 +47,7 @@ export function  prevPage(payload){
 export function getVideogame(id){
     try{
         return async function(dispatch){
-            const json=await axios.get(`http://localhost:3001/videogames-${id}`);
+            const json=await axios.get(`/videogames-${id}`);
             return dispatch({
                 type:"GET_VIDEOGAME",
                 payload:json.data
@@ -63,7 +63,7 @@ export function getVideogame(id){
 export function getNameVideogames(name){
     try{
         return async function (dispatch){
-            let allVg=await axios.get( `http://localhost:3001/name?name=${name}`);
+            let allVg=await axios.get( `/name?name=${name}`);
             return dispatch({
                 type:GET_NAME_VIDEOGAMES,
                 payload:allVg.data
@@ -78,7 +78,7 @@ export function getNameVideogames(name){
 
 export function createVideoGame(data){
     return async function (){
-        const json=await axios.post("http://localhost:3001/create",data);
+        const json=await axios.post("/create",data);
         return json
     }
 }
@@ -88,7 +88,7 @@ export function createVideoGame(data){
 export function getGenres() {
     return async function (dispatch) {
       try {
-        const response = await axios.get(`http://localhost:3001/genres?key=574a2e1d874a498db48bf6179e7cbd2a`);
+        const response = await axios.get(`/genres?key=574a2e1d874a498db48bf6179e7cbd2a`);
         const allGenres = response.data;
         dispatch({
           type: GET_GENRES,
