@@ -18,7 +18,7 @@ export const SET_PAGE="SET_PAGE"
 
 export function getAllVideogames(page){
     return async function (dispatch){
-        let allVideogames=await axios.get(`http://localhost:3001/videogames?page=${page}`);
+        let allVideogames=await axios.get(`/videogames?page=${page}`);
         let data=allVideogames.data;
          dispatch({
             type:"GET_ALL_VIDEOGAMES",
