@@ -3,7 +3,7 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE, DB_PORT
+  POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_HOST, POSTGRES_DATABASE
 } = process.env;
 
 // const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/juegos`, {
@@ -11,8 +11,15 @@ const {
 //   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 // });
 
-const sequelize=new Sequelize(DB_DATABASE, DB_USER, DB_PASSWORD,{
-  host:DB_HOST, port:DB_PORT, dialect:"postgres"
+const sequelize=new Sequelize(`postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DATABASE}`,{
+ logging:false,
+native:false,
+dialectOptions:{
+  ssl:{
+    require:true,
+    rejectUnauthorized:true
+  }
+}
 })
 const basename = path.basename(__filename);
 
