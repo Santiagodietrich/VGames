@@ -13,7 +13,7 @@ server.use(cors({
   origin: 'https://v-games.vercel.app', // Permite solicitudes solo desde este origen
   credentials: true, // Permite incluir cookies en las solicitudes (si las hay)
   methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'], // Métodos HTTP permitidos
-  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'], // Cabeceras permitidas
+  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Access-Control-Allow-Origin'], // Cabeceras permitidas
 }));
 
 server.use(router);
